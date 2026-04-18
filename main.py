@@ -11,7 +11,7 @@ app = FastAPI()
 
 ALPHA_VANTAGE_KEY = os.getenv("ALPHA_VANTAGE_KEY")
 
-# --- UPDATED: The Professional Greet & Home ---
+#The Professional Greet & Home
 @app.get("/")
 def home():
     return {
@@ -24,7 +24,7 @@ def home():
         }
     }
 
-# --- ADDED: The Dynamic Greeting ---
+#The Dynamic Greeting
 @app.get("/hello/{name}")
 def greet_user(name: str):
     return {
